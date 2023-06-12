@@ -1,0 +1,37 @@
+{
+  "name": "2daentrega",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "set NODE_ENV=prod && node ./src/app.js",
+    "dev": "set NODE_ENV=dev && nodemon ./src/app.js",
+    "compile:templates": "handlebars ./views/partials -f ./public/templates.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "express-handlebars": "^7.0.7",
+    "http-errors": "^2.0.0",
+    "mongoose": "^7.2.0",
+    "mongoose-paginate-v2": "^1.7.1",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.json",
+      "public/thumbnails"
+    ]
+  }
+}

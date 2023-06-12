@@ -1,0 +1,50 @@
+<form id="product-form" class="needs-validation grid bg-warning" enctype="multipart/form-data" novalidate>
+  <div class="row container-fluid p-3">
+    <div class="col-xl">
+      <div class="form-group">
+        <label for="title">Titulo: </label>
+        <input type="text" name="title" id="title" class="form-control form-control-sm" required>
+        <div class="invalid-feedback">
+          Complete el dato...
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <input type="text" name="description" id="description" class="form-control form-control-sm" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Precio:</label>
+        <input type="number" name="price" id="price" class="form-control form-control-sm" required>
+      </div>
+      <div class="form-group">
+        <label for="code">Codigo:</label>
+        <input type="text" name="code" id="code" class="form-control form-control-sm" required>
+      </div>
+      <div class="form-group">
+        <label for="stock">Stock:</label>
+        <input type="number" name="stock" id="stock" class="form-control form-control-sm" required>
+      </div>
+      <div class="form-group">
+        <label for="categories">Categoria:</label>
+        <input type="text" name="categories" id="categories" class="form-control form-control-sm" required>
+      </div>
+
+    </div>
+    <div class="col-xl">
+      <div class="image-input-container">
+        <p>Thumbnails:</p>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="thumbnails" name="thumbnails" multiple>
+          <label class="custom-file-label" for="thumbnails">Hasta 3 imagenes</label>
+          <div class="invalid-feedback">Ejemplo no valido</div>
+        </div>
+        <div id="image-container"></div>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="status" name="status" checked>
+        <label class="custom-control-label" for="status">Disponible</label>
+      </div>
+      <button class="btn btn-success btn-block mt-4" type="submit">Agregar</button>
+    </div>
+  </div>
+</form>
